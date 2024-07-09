@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product View Page</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">E-commerce</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Product View -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="product1.jpg" class="img-fluid" alt="Product 1">
+            </div>
+            <div class="col-md-6">
+                <h2>Product Title</h2>
+                <p>Description of the product.</p>
+                <h3>$10.00</h3>
+                <p>Rating: ★★★★☆</p>
+                <button class="btn btn-primary">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Related Products -->
+    <div class="container mt-5">
+        <h2 class="text-center">Related Products</h2>
+        <div class="row text-center">
+            <div class="col-md-4">
+                <img src="product2.jpg" class="img-fluid" alt="Product 2">
+                <h3>Product 2</h3>
+                <p>$20.00</p>
+                <a href="product-view.html" class="btn btn-primary">View Product</a>
+            </div>
+            <div class="col-md-4">
+                <img src="product3.jpg" class="img-fluid" alt="Product 3">
+                <h3>Product 3</h3>
+                <p>$30.00</p>
+                <a href="product-view.html" class="btn btn-primary">View Product</a>
+            </div>
+            <div class="col-md-4">
+                <img src="product4.jpg" class="img-fluid" alt="Product 4">
+                <h3>Product 4</h3>
+                <p>$40.00</p>
+                <a href="product-view.html" class="btn btn-primary">View Product</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <p>&copy; 2024 E-commerce Website</p>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button onclick="topFunction()" id="scrollToTopBtn" class="btn btn-dark">Scroll to Top</button>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // Scroll to top script
+        var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                scrollToTopBtn.style.display = "block";
+            } else {
+                scrollToTopBtn.style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</body>
+</html>
